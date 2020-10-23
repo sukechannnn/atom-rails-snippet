@@ -269,6 +269,14 @@
       let!(:$1) { $2 }
     """
 
+  'before':
+    'prefix': 'before'
+    'body': """
+      before do
+        $1
+      end
+    """
+
   'let_factory_bot':
     'prefix': 'letfg'
     'body': """
