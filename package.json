@@ -1,10 +1,10 @@
 {
-  "name": "rails-snippets",
-  "version": "2.26.0",
-  "main": "./lib/rails-snippets",
+  "name": "atom-rails-snippet",
+  "version": "0.1.0",
+  "main": "./lib/atom-rails-snippet",
   "activationCommands": {
     "atom-text-editor": [
-      "rails-snippets:toggleErb"
+      "atom-rails-snippet:toggleErb"
     ]
   },
   "snippets": [
@@ -13,13 +13,14 @@
     "forms"
   ],
   "keywords": [
+    "ruby",
     "rails",
-    "snippets",
+    "snippet",
     "erb",
-    "ruby on rails"
+    "rspec"
   ],
-  "description": "Snippets for your ruby on rails projects.",
-  "repository": "https://github.com/joseramonc/rails-snippets",
+  "description": "Snippets for Ruby, Rails, RSpec",
+  "repository": "https://github.com/sukechannnn/atom-rails-snippet",
   "license": "MIT",
   "engines": {
     "atom": "*"
