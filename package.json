@@ -1,6 +1,6 @@
 {
   "name": "atom-rails-snippet",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "main": "./lib/atom-rails-snippet",
   "activationCommands": {
     "atom-text-editor": [
