@@ -14,7 +14,7 @@ module.exports =
 
   activate: ->
     @subscriptions = new CompositeDisposable
-    @subscriptions.add atom.commands.add 'atom-workspace', 'rails-snippets:toggleErb', => @toggleErb()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-rails-snippets:toggleErb', => @toggleErb()
 
   toggleErb: ->
     delegate = @

@@ -1,3 +1,3 @@
 'atom-text-editor:not(.mini)':
-  'cmd->': 'rails-snippets:toggleErb'
-  'ctrl->': 'rails-snippets:toggleErb'
+  'cmd->': 'atom-rails-snippets:toggleErb'
+  'ctrl->': 'atom-rails-snippets:toggleErb'
