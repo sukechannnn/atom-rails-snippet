@@ -66,7 +66,7 @@ module.exports =
 
   insertErbBlock: (editor, currentCursor) ->
     # inserting the first block in the list
-    defaultBlock = atom.config.get('rails-snippets.erbBlocks')[0]
+    defaultBlock = atom.config.get('atom-rails-snippet.erbBlocks')[0]
     desiredPosition = null
     # inserting opening bracket
     openingTag = editor.getBuffer().insert currentCursor.getBufferPosition(), defaultBlock[0] + ' '
@@ -86,13 +86,13 @@ module.exports =
     editor.getBuffer().setTextInRange opener, nextBlock[0]
 
   getNextErbBlock: (editor, openingBracket, closingBracket) ->
-    for block, i in atom.config.get('rails-snippets.erbBlocks')
+    for block, i in atom.config.get('atom-rails-snippet.erbBlocks')
       if JSON.stringify([openingBracket, closingBracket]) == JSON.stringify(block)
         # if outside of scope - returning the first block
-        if (i + 1) >= atom.config.get('rails-snippets.erbBlocks').length
-          return atom.config.get('rails-snippets.erbBlocks')[0]
+        if (i + 1) >= atom.config.get('atom-rails-snippet.erbBlocks').length
+          return atom.config.get('atom-rails-snippet.erbBlocks')[0]
         else
-          return atom.config.get('rails-snippets.erbBlocks')[i + 1]
+          return atom.config.get('atom-rails-snippet.erbBlocks')[i + 1]
 
     # in case we haven't found the block in the list, returning the first one
-    return atom.config.get('rails-snippets.erbBlocks')[0]
+    return atom.config.get('atom-rails-snippet.erbBlocks')[0]
